@@ -777,7 +777,7 @@ body {
   <div class="vision-grid">
     <div class="v-card">
       <div class="v-card-label">Body</div>
-      <div class="v-card-value">80kg+ · 10–15% BF · full beard · perfect teeth</div>
+      <div class="v-card-value">80kg+ · 10–15% BF · full beard · Healthy teeth · flow hair</div>
     </div>
     <div class="v-card">
       <div class="v-card-label">Sport</div>
@@ -789,7 +789,7 @@ body {
     </div>
     <div class="v-card">
       <div class="v-card-label">Life</div>
-      <div class="v-card-value">La dolce vita. Own place. Intentional.</div>
+      <div class="v-card-value">La dolce vita. Intentional place.</div>
     </div>
     <div class="v-card">
       <div class="v-card-label">Purpose</div>
@@ -797,7 +797,7 @@ body {
     </div>
     <div class="v-card">
       <div class="v-card-label">People</div>
-      <div class="v-card-value">No regrets. Friday with mom.</div>
+      <div class="v-card-value">No regrets. Enjoyed times with mom.</div>
     </div>
   </div>
 </div>
@@ -865,8 +865,8 @@ body {
   <div class="milestone" id="ms-teeth">
     <div class="milestone-header" onclick="toggleMilestone('ms-teeth')">
       <div style="display:flex;align-items:center;gap:0.75rem;flex:1;">
-        <div class="milestone-title">Fix teeth</div>
-        <div class="milestone-progress"><strong id="teeth-done">0</strong> / 7 complete</div>
+        <div class="milestone-title">health and aesthetics</div>
+        <div class="milestone-progress"><strong id="teeth-done">0</strong></div>
       </div>
       <span class="milestone-chevron">▼</span>
     </div>
@@ -874,20 +874,26 @@ body {
       <div class="progress-bar"><div class="progress-fill" id="teeth-bar" style="width:0%"></div></div>
       <div class="sub-goal-list">
 
+      <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">Sweep the whole appart floor</span></label>
+      <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">Sweep the whole appart Windows</span></label>
+      <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">wash up the Main area floor</span></label>
+      <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">wash up the kitchen floor</span></label>
+      <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">wash up the bathroom floor</span></label>
+
         <!-- #30 — has nested sub-steps -->
-        <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">#30 — Remove, treat abscess &amp; implant</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">Teeth#30 — Remove, treat abscess &amp; implant</span></label>
         <div class="sub-sub-goal-list">
           <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">1. Remove tooth #30</span></label>
           <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">2. Treat the abscess</span></label>
           <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">3. Implant</span></label>
         </div>
 
-        <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">#19 — Remove root + implant</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">#16 — Fix</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">#9 — Implant</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">#8 — Implant</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">#6 — Treat</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">#5 — Implant</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">Teeth#19 — Remove root + implant</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">Teeth#16 — Fix</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">Teeth#9 — Implant</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">Teeth#8 — Implant</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">Teeth#6 — Treat</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">Teeth#5 — Implant</span></label>
       </div>
     </div>
   </div>
@@ -897,22 +903,30 @@ body {
     <div class="milestone-header" onclick="toggleMilestone('ms-kb')">
       <div style="display:flex;align-items:center;gap:0.75rem;flex:1;">
         <div class="milestone-title">Kickboxing mastery</div>
-        <div class="milestone-progress"><strong id="kb-done">0</strong> / 9 complete</div>
+        <div class="milestone-progress"><strong id="kb-done">0</strong></div>
       </div>
       <span class="milestone-chevron">▼</span>
     </div>
     <div class="milestone-body">
       <div class="progress-bar"><div class="progress-fill" id="kb-bar" style="width:0%"></div></div>
       <div class="sub-goal-list">
-        <label class="sub-goal"><input type="checkbox" data-ms="kb" onchange="updateMilestone('kb',9)"><span class="sub-goal-text">Low kick (outside thigh)</span><span class="sub-goal-tag">Leg kicks</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="kb" onchange="updateMilestone('kb',9)"><span class="sub-goal-text">Inside leg kick</span><span class="sub-goal-tag">Leg kicks</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="kb" onchange="updateMilestone('kb',9)"><span class="sub-goal-text">Calf kick</span><span class="sub-goal-tag">Leg kicks</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="kb" onchange="updateMilestone('kb',9)"><span class="sub-goal-text">Switch kick</span><span class="sub-goal-tag">Leg kicks</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="kb" onchange="updateMilestone('kb',9)"><span class="sub-goal-text">Teep to leg kick combination</span><span class="sub-goal-tag">Leg kicks</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="kb" onchange="updateMilestone('kb',9)"><span class="sub-goal-text">Practice kicks very slowely and film it</span><span class="sub-goal-tag">Pressure</span></label>
+        <div class="sub-sub-goal-list">
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Write down the correct way to throw kicks</span></label>
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Inside Leg Kick</span></label>
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Calf Kick</span></label>
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Switch Kick</span></label>
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Teep to leg kick combination</span></label>
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">low kick</span></label>
+        </div>
+
         <label class="sub-goal"><input type="checkbox" data-ms="kb" onchange="updateMilestone('kb',9)"><span class="sub-goal-text">Cut the angle after every combination</span><span class="sub-goal-tag">Pressure</span></label>
         <label class="sub-goal"><input type="checkbox" data-ms="kb" onchange="updateMilestone('kb',9)"><span class="sub-goal-text">Stay in punching range — don't retreat</span><span class="sub-goal-tag">Pressure</span></label>
         <label class="sub-goal"><input type="checkbox" data-ms="kb" onchange="updateMilestone('kb',9)"><span class="sub-goal-text">Body shots to break guard then head</span><span class="sub-goal-tag">Pressure</span></label>
         <label class="sub-goal"><input type="checkbox" data-ms="kb" onchange="updateMilestone('kb',9)"><span class="sub-goal-text">Get the green belt</span><span class="sub-goal-tag">Rank</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="kb" onchange="updateMilestone('kb',9)"><span class="sub-goal-text">Call dad to schedule getting back that punching bag</span><span class="sub-goal-tag">Pressure</span></label>
+        
+
       </div>
     </div>
   </div>
@@ -922,17 +936,49 @@ body {
     <div class="milestone-header" onclick="toggleMilestone('ms-income')">
       <div style="display:flex;align-items:center;gap:0.75rem;flex:1;">
         <div class="milestone-title">Income unlocked</div>
-        <div class="milestone-progress"><strong id="income-done">0</strong> / 4 complete</div>
+        <div class="milestone-progress"><strong id="income-done">0</strong></div>
       </div>
       <span class="milestone-chevron">▼</span>
     </div>
     <div class="milestone-body">
       <div class="progress-bar"><div class="progress-fill" id="income-bar" style="width:0%"></div></div>
       <div class="sub-goal-list">
+        
+          <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Long format youtube content</span></label>
+        <div class="sub-sub-goal-list">
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Start Filming</span></label>
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Record the Audio</span></label>
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Start Editing</span></label>
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Make the Film Set</span></label>
+        </div>
+
+   <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Short format youtube content</span></label>
+        <div class="sub-sub-goal-list">
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Generate a proper short worthy of posting</span></label>
+
+           <div class="sub-sub-goal-list">
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Make the Base images using VEO</span></label>
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Make the Story based on the VEO Image</span></label>
+        </div>
+
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Finish long format video</span></label>
+          <div class="sub-sub-goal-list">
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Cut the shorts</span></label>
+        </div>
+        </div>
+
         <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Get STC + attestation de travail (research first, don't get scammed)</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Get passport → apply to Skycrew + all cabin crew</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Get passport → apply to Skycrew</span></label>
         <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Get bac</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Find the source — money never an issue again</span></label>
+
+        <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Think through that offer os sponsorship you recieved from that friend</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Look into retail jobs (decathlon and marjane)</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Think through the idea of working in construction</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Research how most people made their fortunes</span></label>
+      
+
+
+
       </div>
     </div>
   </div>
@@ -1034,8 +1080,8 @@ body {
     </div>
     -->
     <div class="weight-entry">
-      <span class="weight-date">19 May 2026 — start</span>
-      <span class="weight-kg">70.0 kg</span>
+      <span class="weight-date">20 May 2026 — start</span>
+      <span class="weight-kg">71.56 kg</span>
       <span class="weight-delta same">baseline</span>
     </div>
   </div>
@@ -1127,7 +1173,7 @@ body {
   <!-- EDIT: add new log entries at the top, following this pattern -->
   <div class="log-entry">
     <div class="log-week">Week 1 — May 2026</div>
-    <div class="log-text">Started sleeping properly. Training again after eye issue resolved. French practice 6 out of 8 days. Applying to jobs daily. The basics are being laid. The cycle is breaking. The hero is in the wilderness and moving.</div>
+    <div class="log-text">Started sleeping properly. Training again after eye issue resolved. French practice regularly. Applying to jobs daily. The basics are being laid. The cycle is breaking. The hero is in the wilderness and moving.</div>
   </div>
 </div>
 
@@ -1177,7 +1223,7 @@ const HABITS = [
   { id: 'training',  label: 'Training',   sub: 'Lift/KB/Run' },
 ];
 
-const DAYS = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+const DAYS = ['Day One','Day Two','Day Three','Day Four','Day five','Day six','Day Seven'];
 
 function getWeekKey() {
   const now = new Date();
