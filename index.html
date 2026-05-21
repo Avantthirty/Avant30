@@ -974,6 +974,12 @@ Even if you haven't cause them, someone caused them and left you with them.</div
         </div>
 
         <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Get STC + attestation de travail (research first, don't get scammed)</span></label>
+        <div class="sub-sub-goal-list">
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Calculate an estimate or minimum</span></label>
+        </div>
+        <div class="sub-sub-goal-list">
+        </div>
+          
         <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Get passport → apply to Skycrew</span></label>
         <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Get bac</span></label>
 
@@ -993,8 +999,8 @@ Even if you haven't cause them, someone caused them and left you with them.</div
   <div class="milestone" id="ms-mom">
     <div class="milestone-header" onclick="toggleMilestone('ms-mom')">
       <div style="display:flex;align-items:center;gap:0.75rem;flex:1;">
-        <div class="milestone-title">Time with mom</div>
-        <div class="milestone-progress">Ongoing — <strong id="mom-done">0</strong> Fridays logged</div>
+        <div class="milestone-title">Relationships</div>
+        <div class="milestone-progress">Ongoing — <strong id="mom-done">0</strong> </div>
       </div>
       <span class="milestone-chevron">▼</span>
     </div>
@@ -1003,9 +1009,32 @@ Even if you haven't cause them, someone caused them and left you with them.</div
       <div class="sub-goal-list">
         <!-- EDIT: add a new line here each Friday you spend with mom -->
         <!-- <label class="sub-goal"><input type="checkbox" checked><span class="sub-goal-text">Friday 23 May 2026 — lunch at home</span></label> -->
-        <label class="sub-goal"><input type="checkbox" data-ms="mom" onchange="updateMom()"><span class="sub-goal-text">Friday 1</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="mom" onchange="updateMom()"><span class="sub-goal-text">Friday 2</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="mom" onchange="updateMom()"><span class="sub-goal-text">Friday 3</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="mom" onchange="updateMom()"><span class="sub-goal-text">Go to the hospital with your friend S for the testies test he is afraid of</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="mom" onchange="updateMom()"><span class="sub-goal-text">visit mom Friday 1</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="mom" onchange="updateMom()"><span class="sub-goal-text">Visit mom Friday 2</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="mom" onchange="updateMom()"><span class="sub-goal-text"> visit mom Friday 3</span></label>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MILESTONE: Fears and anxieties -->
+  <div class="milestone" id="ms-fears">
+    <div class="milestone-header" onclick="toggleMilestone('ms-fears')">
+      <div style="display:flex;align-items:center;gap:0.75rem;flex:1;">
+        <div class="milestone-title">Fears and Anxieties</div>
+        <div class="milestone-progress">Ongoing — <strong id="fears-done">0</strong> </div>
+      </div>
+      <span class="milestone-chevron">▼</span>
+    </div>
+    <div class="milestone-body">
+      <div class="progress-bar"><div class="progress-fill" id="mom-bar" style="width:100%"></div></div>
+      <div class="sub-goal-list">
+        <!-- EDIT: add a new line here each Friday you spend with mom -->
+        <!-- <label class="sub-goal"><input type="checkbox" checked><span class="sub-goal-text">Friday 23 May 2026 — lunch at home</span></label> -->
+        <label class="sub-goal"><input type="checkbox" data-ms="fears" onchange="updateFears()"><span class="sub-goal-text">Go try to get the STC and certificate after having delayed it for months</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="fears" onchange="updateFears()"><span class="sub-goal-text">Run to the beach</span></label>
+        
       </div>
     </div>
   </div>
@@ -1275,7 +1304,7 @@ function buildHabitGrid(habit) {
   const streak = calcStreak(habit.id);
 
   let html = `<div class="week-row week-header">
-    <div class="day-head" style="background:var(--bg2);border-bottom:0.5px solid var(--border2);font-size:9px;color:var(--dim);padding:0.5rem 0.75rem;letter-spacing:0.05em;">Week of ${weekKey}</div>`;
+    <div class="day-head" style="background:var(--bg2);border-bottom:0.5px solid var(--border2);font-size:9px;color:var(--dim);padding:0.5rem 0.75rem;letter-spacing:0.05em;">Week of 2026-05-21</div>`;
   DAYS.forEach(d => { html += `<div class="day-head">${d}</div>`; });
   html += `</div>`;
 
@@ -1337,6 +1366,15 @@ function updateMom() {
   if (label) label.textContent = done;
   const data = loadMilestones();
   checkboxes.forEach((cb, i) => { data[`mom_${i}`] = cb.checked ? 1 : 0; });
+  saveMilestones(data);
+}
+function updateFears() {
+  const checkboxes = document.querySelectorAll('[data-ms="fears"]');
+  const done = Array.from(checkboxes).filter(c => c.checked).length;
+  const label = document.getElementById('fears-done');
+  if (label) label.textContent = done;
+  const data = loadMilestones();
+  checkboxes.forEach((cb, i) => { data[`fears_${i}`] = cb.checked ? 1 : 0; });
   saveMilestones(data);
 }
 
