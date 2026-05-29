@@ -347,6 +347,10 @@ body {
 .streak.hot { color: var(--gold); }
 
 /* HABIT BLOCK */
+
+
+
+
 .habit-block {
   margin-bottom: 2px;
 }
@@ -819,43 +823,43 @@ Even if you haven't cause them, someone caused them and left you with them.</div
   <!-- HABIT: SLEEP -->
   <div class="goals-section">
     <div class="goals-section-title">Sleep <span>10pm–3am · no screens past 11pm</span></div>
-    <div class="habit-block" id="habit-sleep"></div>
+    <div class="habit-block" id="habit-sleepWT"></div>
   </div>
 
   <!-- HABIT: HYDRATION -->
   <div class="goals-section">
     <div class="goals-section-title">Hydration <span>First thing after brushing teeth</span></div>
-    <div class="habit-block" id="habit-hydration"></div>
+    <div class="habit-block" id="habit-hydrationWT"></div>
   </div>
 
   <!-- HABIT: DIET -->
   <div class="goals-section">
     <div class="goals-section-title">Diet <span>2 protein meals + 1 protein snack</span></div>
-    <div class="habit-block" id="habit-diet"></div>
+    <div class="habit-block" id="habit-dietWT"></div>
   </div>
 
   <!-- HABIT: MEDITATION -->
   <div class="goals-section">
     <div class="goals-section-title">Meditation <span>Minimum 2 minutes · stomach breathing</span></div>
-    <div class="habit-block" id="habit-meditation"></div>
+    <div class="habit-block" id="habit-meditationWT"></div>
   </div>
 
   <!-- HABIT: FRENCH -->
   <div class="goals-section">
-    <div class="goals-section-title">French <span>Speak 1h · Read 30min · Listen 1h</span></div>
-    <div class="habit-block" id="habit-french"></div>
+    <div class="goals-section-title">French <span>Speak 1h · Read 30min · Listen 1h · Write 15 Minutes</span></div>
+    <div class="habit-block" id="habit-frenchWT"></div>
   </div>
 
   <!-- HABIT: APPLY -->
   <div class="goals-section">
     <div class="goals-section-title">Jobs <span>Check available jobs and apply</span></div>
-    <div class="habit-block" id="habit-jobs"></div>
+    <div class="habit-block" id="habit-jobsWT"></div>
   </div>
 
   <!-- HABIT: TRAINING -->
   <div class="goals-section">
     <div class="goals-section-title">Training <span>Lift 3x · Kickboxing 3x · Run 1x per week</span></div>
-    <div class="habit-block" id="habit-training"></div>
+    <div class="habit-block" id="habit-trainingWT"></div>
   </div>
 </div>
 
@@ -885,7 +889,8 @@ Even if you haven't cause them, someone caused them and left you with them.</div
       <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">wash up the Main area floor</span></label>
       <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">wash up the kitchen floor</span></label>
       <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">wash up the bathroom floor</span></label>
-
+      <label class="sub-goal"><input type="checkbox" checked data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">finally go to the dentist for that tooth</span></label>
+  
         <!-- #30 — has nested sub-steps -->
         <label class="sub-goal"><input type="checkbox" data-ms="teeth" onchange="updateMilestone('teeth',7)"><span class="sub-goal-text">Teeth#30 — Remove, treat abscess &amp; implant</span></label>
         <div class="sub-sub-goal-list">
@@ -916,7 +921,7 @@ Even if you haven't cause them, someone caused them and left you with them.</div
     <div class="milestone-body">
       <div class="progress-bar"><div class="progress-fill" id="kb-bar" style="width:0%"></div></div>
       <div class="sub-goal-list">
-        <label class="sub-goal"><input type="checkbox" data-ms="kb" onchange="updateMilestone('kb',9)"><span class="sub-goal-text">Practice kicks very slowely and film it</span><span class="sub-goal-tag">Pressure</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="kb" onchange="updateMilestone('kb',9)"><span class="sub-goal-text">Practice kicks very slowely and film it(5 minutes each kick)</span><span class="sub-goal-tag">Pressure</span></label>
         <div class="sub-sub-goal-list">
           <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Write down the correct way to throw kicks</span></label>
           <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Inside Leg Kick</span></label>
@@ -950,8 +955,17 @@ Even if you haven't cause them, someone caused them and left you with them.</div
       <div class="progress-bar"><div class="progress-fill" id="income-bar" style="width:0%"></div></div>
       <div class="sub-goal-list">
         
+        <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Master French</span></label>
+        <div class="sub-sub-goal-list">
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Debate a science/philosophy/interest subject for 1 hour(maybe in two halves) only using french vs gpt or native with minimal mistakes</span></label>
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Write between 500 and 800 words about a science/philosophy/interest with minimal number of mistakes </span></label>
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Start Editing</span></label>
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Make the Film Set</span></label>
+        </div>
+
           <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Long format youtube content</span></label>
         <div class="sub-sub-goal-list">
+          <label class="sub-sub-goal"><input type="checkbox" checked data-ms="teeth30"><span class="sub-sub-text">Test and find your main shot</span></label>
           <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Start Filming</span></label>
           <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Record the Audio</span></label>
           <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Start Editing</span></label>
@@ -976,6 +990,7 @@ Even if you haven't cause them, someone caused them and left you with them.</div
         <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Get STC + attestation de travail (research first, don't get scammed)</span></label>
         <div class="sub-sub-goal-list">
           <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Calculate an estimate or minimum</span></label>
+          <label class="sub-sub-goal"><input type="checkbox" data-ms="teeth30"><span class="sub-sub-text">Get it legalized</span></label>
         </div>
         <div class="sub-sub-goal-list">
         </div>
@@ -983,7 +998,7 @@ Even if you haven't cause them, someone caused them and left you with them.</div
         <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Get passport → apply to Skycrew</span></label>
         <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Get bac</span></label>
 
-        <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Think through that offer os sponsorship you recieved from that friend</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="income" checked onchange="updateMilestone('income',4)"><span class="sub-goal-text">Think through that offer os sponsorship you recieved from that friend</span></label>
         <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Look into retail jobs (decathlon and marjane)</span></label>
         <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Think through the idea of working in construction</span></label>
         <label class="sub-goal"><input type="checkbox" data-ms="income" onchange="updateMilestone('income',4)"><span class="sub-goal-text">Research how most people made their fortunes</span></label>
@@ -1009,10 +1024,10 @@ Even if you haven't cause them, someone caused them and left you with them.</div
       <div class="sub-goal-list">
         <!-- EDIT: add a new line here each Friday you spend with mom -->
         <!-- <label class="sub-goal"><input type="checkbox" checked><span class="sub-goal-text">Friday 23 May 2026 — lunch at home</span></label> -->
-        <label class="sub-goal"><input type="checkbox" data-ms="mom" onchange="updateMom()"><span class="sub-goal-text">Go to the hospital with your friend S for the testies test he is afraid of</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="mom" onchange="updateMom()"><span class="sub-goal-text">visit mom Friday 1</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="mom" onchange="updateMom()"><span class="sub-goal-text">Visit mom Friday 2</span></label>
-        <label class="sub-goal"><input type="checkbox" data-ms="mom" onchange="updateMom()"><span class="sub-goal-text"> visit mom Friday 3</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="mom" checked onchange="updateMom()"><span class="sub-goal-text">Go to the hospital with your friend S for the testies test he is afraid of</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="mom" checked onchange="updateMom()"><span class="sub-goal-text">visit mom once a week</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="mom" onchange="updateMom()"><span class="sub-goal-text">Visit mom once a week</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="mom" onchange="updateMom()"><span class="sub-goal-text"> visit mom once a week</span></label>
       </div>
     </div>
   </div>
@@ -1032,8 +1047,15 @@ Even if you haven't cause them, someone caused them and left you with them.</div
       <div class="sub-goal-list">
         <!-- EDIT: add a new line here each Friday you spend with mom -->
         <!-- <label class="sub-goal"><input type="checkbox" checked><span class="sub-goal-text">Friday 23 May 2026 — lunch at home</span></label> -->
-        <label class="sub-goal"><input type="checkbox" data-ms="fears" onchange="updateFears()"><span class="sub-goal-text">Go try to get the STC and certificate after having delayed it for months</span></label>
+
+        <label class="sub-goal"><input type="checkbox" data-ms="fears" onchange="updateFears()"><span class="sub-goal-text">think through insecurity of working a low end jobs</span></label>
+        <label class="sub-goal"><input type="checkbox" data-ms="fears" checked onchange="updateFears()"><span class="sub-goal-text">Go try to get the STC and certificate after having delayed it for months</span></label>
         <label class="sub-goal"><input type="checkbox" data-ms="fears" onchange="updateFears()"><span class="sub-goal-text">Run to the beach</span></label>
+        <label class="sub-goal"><input type="checkbox" checked data-ms="fears" onchange="updateFears()"><span class="sub-goal-text">Going to dentist after putting it off</span></label>
+        <label class="sub-goal"><input type="checkbox" checked data-ms="fears" onchange="updateFears()"><span class="sub-goal-text">Help dad with grab and hold the sheep in the AID</span></label>
+        <label class="sub-goal"><input type="checkbox" checked data-ms="fears" onchange="updateFears()"><span class="sub-goal-text">Help the neighbours with their AId sheep holding his feet down</span></label>
+
+
         
       </div>
     </div>
@@ -1060,13 +1082,13 @@ Even if you haven't cause them, someone caused them and left you with them.</div
     <tbody>
       <tr>
         <td>Barbell squat</td>
-        <td class="pr-current">— kg</td>
-        <td class="pr-broken">— kg</td>
+        <td class="pr-current">21 kg</td>
+        <td class="pr-broken">22 kg</td>
       </tr>
       <tr>
         <td>Overhead press</td>
-        <td class="pr-current">— kg</td>
-        <td class="pr-broken">— kg</td>
+        <td class="pr-current">21 kg</td>
+        <td class="pr-broken">22 kg</td>
       </tr>
       <tr>
         <td>Barbell curl</td>
@@ -1075,13 +1097,13 @@ Even if you haven't cause them, someone caused them and left you with them.</div
       </tr>
       <tr>
         <td>Bench press</td>
-        <td class="pr-current">— kg</td>
-        <td class="pr-broken">— kg</td>
+        <td class="pr-current">21 kg</td>
+        <td class="pr-broken">22 kg</td>
       </tr>
       <tr>
         <td>Barbell row</td>
-        <td class="pr-current">— kg</td>
-        <td class="pr-broken">— kg</td>
+        <td class="pr-current">21 kg</td>
+        <td class="pr-broken">22 kg</td>
       </tr>
       <tr>
         <td>Hip thrust</td>
@@ -1208,13 +1230,14 @@ Even if you haven't cause them, someone caused them and left you with them.</div
   <!-- EDIT: add new log entries at the top, following this pattern -->
   <div class="log-entry">
     <div class="log-week">Week 1 — May 2026</div>
-    <div class="log-text">Started sleeping properly. Training again after eye issue resolved. French practice regularly. Applying to jobs daily. The basics are being laid. The cycle is breaking. The hero is in the wilderness and moving.</div>
+    <div class="log-text">I Loved doing the work this week, I did every goal everyday of the week except sleeping at 3 AM, I usually slept at 4 or maximum 5, i don't feel my self-esteem attacked by that since i did all the others and because  sleeping later did not affect me that bad, great week, let's keep the work going.</div>
   </div>
 </div>
 
 <div class="footer">Avant 30 · Casablanca · May 2026</div>
 
 <script>
+  const WEEKS = ['2026-05-19', '2026-05-29'];
 // ── COUNTDOWN ──────────────────────────────────────────
 function updateCountdown() {
   const birth = new Date('1999-10-18');
@@ -1249,12 +1272,19 @@ function showTab(name, btn) {
 
 // ── HABIT GRID (localStorage) ──────────────────────────────────────────
 const HABITS = [
+  { id: 'sleepWT',     label: 'Sleep',      sub: '10pm–3am' },
   { id: 'sleep',     label: 'Sleep',      sub: '10pm–3am' },
+  { id: 'hydrationWT', label: 'Hydration',  sub: 'First thing' },
   { id: 'hydration', label: 'Hydration',  sub: 'First thing' },
+  { id: 'dietWT',      label: 'Diet',       sub: '2 meals + snack' },
   { id: 'diet',      label: 'Diet',       sub: '2 meals + snack' },
+  { id: 'meditationWT',label: 'Meditation', sub: '2 min min' },
   { id: 'meditation',label: 'Meditation', sub: '2 min min' },
+  { id: 'frenchWT',    label: 'French',     sub: 'Speak+Read+Listen' },
   { id: 'french',    label: 'French',     sub: 'Speak+Read+Listen' },
+  { id: 'jobsWT',      label: 'Jobs',       sub: 'Check & apply' },
   { id: 'jobs',      label: 'Jobs',       sub: 'Check & apply' },
+  { id: 'trainingWT',  label: 'Training',   sub: 'Lift/KB/Run' },
   { id: 'training',  label: 'Training',   sub: 'Lift/KB/Run' },
 ];
 
@@ -1296,15 +1326,16 @@ function calcStreak(id) {
   } catch(e) { return 0; }
 }
 
-function buildHabitGrid(habit) {
+function buildHabitGrid(habit, weekKey) {
+
   const container = document.getElementById('habit-' + habit.id);
   if (!container) return;
-  const weekKey = getWeekKey();
+  
   const data = loadHabits();
   const streak = calcStreak(habit.id);
 
   let html = `<div class="week-row week-header">
-    <div class="day-head" style="background:var(--bg2);border-bottom:0.5px solid var(--border2);font-size:9px;color:var(--dim);padding:0.5rem 0.75rem;letter-spacing:0.05em;">Week of 2026-05-21</div>`;
+    <div class="day-head" style="background:var(--bg2);border-bottom:0.5px solid var(--border2);font-size:9px;color:var(--dim);padding:0.5rem 0.75rem;letter-spacing:0.05em;">Week of ${weekKey}</div>`;
   DAYS.forEach(d => { html += `<div class="day-head">${d}</div>`; });
   html += `</div>`;
 
@@ -1334,7 +1365,9 @@ function toggleHabit(weekKey, id, dayIdx, el) {
 }
 
 function buildAllHabits() {
-  HABITS.forEach(h => buildHabitGrid(h));
+  WEEKS.forEach(weekKey => {
+    HABITS.forEach(habit => buildHabitGrid(habit, weekKey));
+  });
 }
 
 // ── MILESTONES (localStorage) ──────────────────────────────────────────
